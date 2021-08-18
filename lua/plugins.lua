@@ -169,7 +169,8 @@ local function init()
         'kabouzeid/nvim-lspinstall' }
 
     -- markdown preview using `glow`
-    -- use { 'npxbr/glow.nvim', run = ':GlowInstall'}
+    use { 'npxbr/glow.nvim'}
+
     use { 'previm/previm',
         config = function()
             vim.g.previm_open_cmd = 'xdg-open'
@@ -196,7 +197,7 @@ local function init()
     use { 'fatih/vim-go',
         config = "require'plugin.vim-go'"}
 
-    use {'glepnir/lspsaga.nvim'}
+    use { 'lsp-colors.nvim'}
 end
 
 -- called from 'lua/autocmd.lua' at `VimEnter`
