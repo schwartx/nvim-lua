@@ -36,10 +36,10 @@ vim.cmd([[
     cnoreabbrev Qall qall
 ]])
 
--- <ctrl-s> to Save
-remap('n', '<C-S>', '<esc>:update<cr>', { silent = true })
-remap('v', '<C-S>', '<esc>:update<cr>', { silent = true })
-remap('i', '<C-S>', '<esc>:update<cr>', { silent = true })
+-- -- <ctrl-s> to Save
+-- remap('n', '<C-S>', '<esc>:update<cr>', { silent = true })
+-- remap('v', '<C-S>', '<esc>:update<cr>', { silent = true })
+-- remap('i', '<C-S>', '<esc>:update<cr>', { silent = true })
 
 -- Beginning and end of line in `:` command mode
 remap('c', '<C-a>', '<home>', {})

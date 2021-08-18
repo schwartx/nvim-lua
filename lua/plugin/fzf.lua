@@ -53,8 +53,8 @@ local remap = vim.api.nvim_set_keymap
 -- fzf shortcuts
 remap('n', '<leader><F1>', ':FzfHelptags<CR>',  { noremap = true, silent = true })
 remap('n', '<leader>z;'  , ':FzfBuffers<CR>',   { noremap = true, silent = true })
--- remap('n', '<leader>zf'  , ':FzfFiles<CR>',     { noremap = true, silent = true })
-remap('n', '<leader>zf'  , ':FzfDevicons<CR>',  { noremap = true, silent = true })
+remap('n', '<leader>zf'  , ':FzfFiles<CR>',     { noremap = true, silent = true })
+-- remap('n', '<leader>zf'  , ':FzfDevicons<CR>',  { noremap = true, silent = true })
 remap('n', '<leader>zg'  , ':FzfGFiles<CR>',    { noremap = true, silent = true })
 remap('n', '<leader>zm'  , ':FzfMarks<CR>',     { noremap = true, silent = true })
 remap('n', '<leader>zc'  , ':FzfCommands<CR>',  { noremap = true, silent = true })
@@ -72,7 +72,7 @@ remap('n', '<leader>zC'  , ':FzfCommits<CR>',   { noremap = true, silent = true 
 -- <leader>fr    search using `rg`
 -- <leader>fw    search word under cursor
 -- <leader>fv    search visual selection
-remap('n', '<leader>zl', ':<C-U><C-R> FzfRG<CR>',             { noremap = true })
+-- remap('n', '<leader>zl', ':<C-U><C-R> FzfRG<CR>',             { noremap = true })
 remap('n', '<leader>zr', ':<C-U><C-R> FzfRg<Space>',          { noremap = true })
 remap('n', '<leader>zw', ':<C-U><C-R> FzfRg <C-R><C-W><CR>',  { noremap = true })
 remap('n', '<leader>zW', ':<C-U><C-R> FzfRg <C-R><C-A><CR>',  { noremap = true })
