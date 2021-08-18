@@ -212,7 +212,7 @@ local keymaps = {
         c = 'nvim commands',
         C = 'git commits',
         f = { [[:lua require('utils').ensure_loaded_cmd(]] ..
-              [[{'fzf.vim'},{'FzfDevicons'})<CR>]],
+              [[{'fzf.vim'},{'FzfFiles'})<CR>]],
               'Files' },
         g = 'GitFiles',
         G = 'git grep',
