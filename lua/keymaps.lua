@@ -20,27 +20,6 @@ remap('', '<leader>ei', '<Esc>:NvimEditInit<CR>',   { silent = true })
 remap('', '<leader>ek', '<Esc>:NvimEditKeymap<CR>', { silent = true })
 remap('', '<leader>R',  "<Esc>:NvimReload<CR>",     { silent = true })
 
--- -- Fix common typos
--- vim.cmd([[
---     cnoreabbrev W! w!
---     cnoreabbrev Q! q!
---     cnoreabbrev Qa! qa!
---     cnoreabbrev Qall! qall!
---     cnoreabbrev Wq wq
---     cnoreabbrev Wa wa
---     cnoreabbrev wQ wq
---     cnoreabbrev WQ wq
---     cnoreabbrev W w
---     cnoreabbrev Q q
---     cnoreabbrev Qa qa
---     cnoreabbrev Qall qall
--- ]])
-
--- -- <ctrl-s> to Save
--- remap('n', '<C-S>', '<esc>:update<cr>', { silent = true })
--- remap('v', '<C-S>', '<esc>:update<cr>', { silent = true })
--- remap('i', '<C-S>', '<esc>:update<cr>', { silent = true })
-
 -- Beginning and end of line in `:` command mode
 remap('c', '<C-a>', '<home>', {})
 remap('c', '<C-e>', '<end>' , {})
