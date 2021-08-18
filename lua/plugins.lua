@@ -193,6 +193,10 @@ local function init()
         cmd = {'ColorizerAttachToBuffer', 'ColorizerDetachFromBuffer' },
         opt = true }
 
+    use { 'fatih/vim-go',
+        config = "require'plugin.vim-go'"}
+
+    use {'glepnir/lspsaga.nvim'}
 end
 
 -- called from 'lua/autocmd.lua' at `VimEnter`
