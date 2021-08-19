@@ -75,6 +75,10 @@ local function init()
         config = "require('plugin.indent-blankline')",
         opt = true, cmd = { 'IndentBlanklineToggle' } }
 
+    vim.api.nvim_set_keymap('', '<F9>', '<Esc>:TagbarToggle<CR>', {noremap = true, silent = true})
+    use { 'preservim/tagbar', opt = true, config = "require('plugin.tagbar')",
+        cmd = {'TagbarToggle'}}
+
     -- ':source' & ':luafile' don't reload `require()` properly
     -- Use ':Reload' & ':Restart' instead, alternatively:
     -- ':lua require("nvim-reload").Reload()'
@@ -197,7 +201,6 @@ local function init()
     use { 'fatih/vim-go',
         config = "require'plugin.vim-go'"}
 
-    use { 'lsp-colors.nvim'}
 end
 
 -- called from 'lua/autocmd.lua' at `VimEnter`
