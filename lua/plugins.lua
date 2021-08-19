@@ -201,6 +201,14 @@ local function init()
     use { 'fatih/vim-go',
         config = "require'plugin.vim-go'"}
 
+    use { 'hrsh7th/vim-vsnip' }
+
+    use { 'norcalli/snippets.nvim' }
+
+    use { 'L3MON4D3/LuaSnip' }
+
+    use { 'SirVer/ultisnips' }
+
 end
 
 -- called from 'lua/autocmd.lua' at `VimEnter`

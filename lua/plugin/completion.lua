@@ -27,8 +27,10 @@ require'compe'.setup {
     spell         = false;
     tags          = true;
     treesitter    = true;
-    snippets_nvim = false;
-    vsnip         = false;
+    snippets_nvim = true;
+    ultisnips     = true;
+    vsnip         = true;
+    luasnip       = true;
   };
 }
 
